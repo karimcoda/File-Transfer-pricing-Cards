@@ -1,0 +1,110 @@
+.pring-cards{
+    width: 65rem;
+    min-height: 27rem;
+    background-image: url(../../images/bg-top.svg), url(../../images/bg-bottom.svg);
+    box-shadow: 0px 0px 28px -25px rgba(0,0,0,0.75);
+    padding: 20px 0;
+
+    &__head{
+        h2{
+            font-size: 2rem;
+            color: $colorDark-GB;
+        }
+
+        .subscribe-longTime{
+            p{
+                font-size: .7rem;
+                color: $color-GB;
+            }
+            .btn-circel{
+                width: 30px;
+                height: 14px;
+                background: $color-LG;
+                margin: 0 10px;
+                border-radius: 6px;
+                padding: 2px;
+                position: relative;
+
+                span{
+                    width: 10px;
+                    height: 10px;
+                    background-color: $colorVeryLight-GB;
+                    display: block;
+                    border-radius: 50%;
+                    position: absolute;
+                    
+                    
+                    &.ch-btn-right{
+                        right: 2px;
+                    }
+                }
+            }
+        }
+    }
+    &__body{
+        margin: 40px 0;
+
+        @media (max-width: $sizeDesktop){
+            flex-direction: column;
+        }
+
+        .box{
+            margin: 10px 0;
+            padding: 30px 40px;
+            text-align: center;
+            background-color: $colorVeryLight-GB;
+            border-radius: 8px;
+            box-shadow: 0px 0px 28px -25px rgba(0,0,0,0.75);
+            color: $color-GB;
+
+            h3{
+                font-size: .8rem;
+                color: $color-GB;
+            }
+
+            ul{
+                list-style: none;
+                width: 100%;
+
+                li.price{
+                    font-size: 2rem;
+                    color: $colorDark-GB;
+                }
+                li{
+                    border-bottom: 1px solid $colorLight-GB;
+                    padding: 5px 0;
+                    font-size: .7rem;
+                    
+
+                }
+            }
+            a.btn{
+                margin: 20px 0;
+                padding: 3px 40px;
+                background: $color-LG;
+                border-radius: 6px;
+                color: $colorVeryLight-GB;
+                text-decoration: none;
+                font-size: .7rem;
+            }
+
+            &.professional{
+                height: 18.5rem;
+                background: $color-LG;
+                color: $colorVeryLight-GB;
+                
+                h3{
+                    color: $colorVeryLight-GB;
+                }
+
+                li.price{
+                    color: $colorVeryLight-GB;
+                }
+                a.btn{
+                    background: $colorVeryLight-GB;
+                    color: $color-bule;
+                }
+            }
+        }
+    }
+}
